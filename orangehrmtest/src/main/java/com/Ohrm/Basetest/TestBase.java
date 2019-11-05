@@ -38,7 +38,7 @@ public class TestBase {
 	public static void initialization() {
 		String browserName=prop.getProperty("browser");
 		
-		if(browserName.equals("chrome")) {
+		if(browserName.equals("ie")) {
 			System.setProperty("webdriver.ie.driver", "E:\\JavaProgrammes\\orangehrmtest\\DriverFiles\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 			
@@ -60,8 +60,8 @@ public class TestBase {
 		ExtentHtmlReporter extent=new ExtentHtmlReporter("E:\\JavaProgrammes\\orangehrmtest\\Reports\\OhrmReports.html");
 		reports=new ExtentReports();
 		reports.attachReporter(extent);
-		
-	}
+//	Test	=reports.createTest("asd");
+			}
 	
 	
 	

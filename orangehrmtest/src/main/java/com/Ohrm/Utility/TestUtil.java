@@ -33,6 +33,7 @@ public static String TestDATA_SHEET_PATH="E:\\JavaProgrammes\\orangehrmtest\\src
 			for(int j=0;j<sheet.getRow(i).getLastCellNum();j++) {
 
 				data[i][j]=sheet.getRow(i+1).getCell(j).getStringCellValue();
+				
 				System.out.println(data[i][j]);
 			}
 		}
